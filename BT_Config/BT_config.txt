@@ -1,0 +1,31 @@
+{"BT_appConfig":
+	{
+	"BT_items":[
+		{"itemId":"JAEB983F34D947F6DA14083BC",
+			"itemType":"BT_app",
+			"buzztouchAppId":"JAEB983F34D947F6DA14083BC",
+			"buzztouchAPIKey":"22D4B8736B97F2E8DA866FF", 
+			"dataURL":"http://www.buzztouch.com/api/app/?command=getAppData&appGuid=JAEB983F34D947F6DA14083BC&apiKey=22D4B8736B97F2E8DA866FF&apiSecret=C6E3C01F80049E910DFB72A", 
+			"reportToCloudURL":"http://www.buzztouch.com/api/app/?command=reportToCloud&appGuid=JAEB983F34D947F6DA14083BC&apiKey=22D4B8736B97F2E8DA866FF&apiSecret=C6E3C01F80049E910DFB72A&deviceId=[deviceId]&deviceLatitude=[deviceLatitude]&deviceLongitude=[deviceLongitude]&deviceModel=[deviceModel]&userId=[userId]", 
+			"name":"RevMobIOSSampleApp", 
+			"version":"2.0", 
+			"startLocationUpdates":"0", 
+			"allowRotation":"allDevices", 
+
+			"BT_themes":[{"itemId":"3602C33B87CD3AB6D3368FF", "itemType":"BT_theme", "backgroundColor":"#FFFFFF"}
+			],
+
+			"BT_tabs":[
+			],
+
+			"BT_screens":[{"itemId":"6A73AAA3C1D312330DFB26B", "itemType":"BT_screen_menuListSimple", "itemNickname":"Home Screen Menu", "navBarTitleText":"Home",
+"childItems":[]}
+
+			]
+		}
+
+		] 
+
+	}
+
+}
