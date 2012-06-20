@@ -1,3 +1,8 @@
 *~
 .DS_Store
+Build/*
+Build/
+UserInterfaceState.xcuserstate
+contents.xcworkspacedata
+xcuserdata
 
