@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "RevMobAdvertisement.h"
 
 @protocol RevMobAdsDelegate <NSObject>
 
@@ -8,35 +7,38 @@
 
 # pragma mark Fullscreen Callbacks
 
-- (void) adDidReceive:(id<RevMobAdvertisement>)ad;
+- (void) revmobAdDidReceive;
 
-- (void) adDidFailWithError:(NSError *)error;
+- (void) revmobAdDidFailWithError:(NSError *)error;
 
+- (void) revmobUserClickedInTheCloseButton;
+
+- (void) revmobUserClickedInTheAd;
 
 # pragma mark Popup Callbacks
 
-- (void)popupDidReceive;
 // Called when a popup is available
+- (void)popupDidReceive;
 
-- (void)popupDidFail;
 // Called when a popup is not available
+- (void)popupDidFail;
 
-- (void)popupDidBecomeActive;
 // Called when popup is displayed
+- (void)popupDidBecomeActive;
 
-- (void)popupDidDismissActive;
 // Called when user is back to the app
+- (void)popupDidDismissActive;
 
-- (void)userWillLeaveApplication;
 // Called when user clicked and is about to leave the application
+- (void)userWillLeaveApplication;
 
 
 # pragma mark Advertiser Callbacks
 
-- (void)installDidReceive;
 // Called if install is successfully registered
+- (void)installDidReceive;
 
-- (void)installDidFail;
 // Called if install couldn't be registered
+- (void)installDidFail;
 
 @end
