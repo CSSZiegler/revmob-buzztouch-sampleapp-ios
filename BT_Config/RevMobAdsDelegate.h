@@ -7,13 +7,13 @@
 
 # pragma mark Fullscreen Callbacks
 
-- (void) revmobAdDidReceive;
+- (void)revmobAdDidReceive;
 
-- (void) revmobAdDidFailWithError:(NSError *)error;
+- (void)revmobAdDidFailWithError:(NSError *)error;
 
-- (void) revmobUserClickedInTheCloseButton;
+- (void)revmobUserClickedInTheCloseButton;
 
-- (void) revmobUserClickedInTheAd;
+- (void)revmobUserClickedInTheAd;
 
 # pragma mark Popup Callbacks
 

@@ -104,16 +104,16 @@
  
  *** in a Delegate, if you have multi-tasking in your app
  - (void)applicationDidBecomeActive:(UIApplication *)application {
- [BCFAds showPopupWithAppID:@"4f342dc09dcb890003003a7a" withDelegate:nil];
+    [BCFAds showPopupWithAppID:@"4f342dc09dcb890003003a7a" withDelegate:nil];
  }
  
  *** in a UIViewController
  - (void)viewDidLoad {
- [BCFAds showPopupWithAppID:@"4f342dc09dcb890003003a7a" withDelegate:nil];
+    [BCFAds showPopupWithAppID:@"4f342dc09dcb890003003a7a" withDelegate:nil];
  
- // The remaining part of your code goes here
+    // The remaining part of your code goes here
  
- [super viewDidLoad];
+    [super viewDidLoad];
  }
  
  *** any other object or method will work
