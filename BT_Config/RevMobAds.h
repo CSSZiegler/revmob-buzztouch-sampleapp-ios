@@ -154,4 +154,14 @@
  */
 + (void) showBannerAdWithAppID:(NSString *)appID withFrame:(CGRect)frame withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
 
+
+/*! @function hideBannerAdWithAppID:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @discussion
+ 
+ Hide a banner.
+ 
+ */
++ (void) hideBannerAdWithAppID:(NSString *)appID;
+
 @end
