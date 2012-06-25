@@ -45,7 +45,7 @@
 #import "BT_debugger.h"
 #import "BT_background_view.h"
 #import "revmobiossampleapp_appDelegate.h"
-#import "RevMobAds.h"
+
 
 @implementation revmobiossampleapp_appDelegate
 @synthesize window, refreshingView, globalBackroundView, spinner, configurationFileName, saveAsFileName, modifiedFileName;
@@ -441,9 +441,33 @@ the active application in a multi-tasking environment
 		
 	}
     NSString *REVMOB_ID = @"4f340cc09dcb890003003a6a";
+    [RevMobAds showFullscreenAdWithAppID:REVMOB_ID withDelegate:self];
+    [NSThread sleepForTimeInterval:2];
+    [RevMobAds showBannerAdWithAppID:REVMOB_ID withDelegate:self];
+    [NSThread sleepForTimeInterval:2];
     [RevMobAds showPopupWithAppID:REVMOB_ID withDelegate:nil];
-    [RevMobAds showFullscreenAdWithAppID:REVMOB_ID];
 }
+
+#pragma mark RevMobAdsDelegate methods
+
+- (void) revmobAdDidReceive {
+    NSLog(@"[RevMob BuzzTouch Sample App] Ad loaded.");
+}
+
+- (void) revmobAdDidFailWithError:(NSError *)error {
+    NSLog(@"[RevMob BuzzTouch Sample App] Ad failed: %@", error);
+}
+
+- (void) revmobUserClickedInTheCloseButton {
+    NSLog(@"[RevMob BuzzTouch Sample App] User clicked in the close button");
+}
+
+- (void) revmobUserClickedInTheAd {
+    NSLog(@"[RevMob BuzzTouch Sample App] User clicked in the Ad");
+}
+
+#pragma mark More BuzzTouch methods
+
 
 /*
 	This method makes a simple http request to a remote server. It's primary purpose is to 

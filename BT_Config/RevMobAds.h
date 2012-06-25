@@ -2,6 +2,7 @@
 #import <UIKit/UIKit.h>
 #import "RevMobAdsDelegate.h"
 
+
 @interface RevMobAds : NSObject
 
 /*! @function showFullscreenAdWithAppID:
@@ -119,5 +120,38 @@
  *** any other object or method will work
  */
 + (void) showPopupWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
+
+
+/*! @function showBannerAdWithAppID:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @param delegate: You can receive notifications when the Ad is or is not loaded.
+ @discussion
+ 
+ Same as showBannerAdWithAppID:withDelegate: with delegate nil.
+
+ */
++ (void) showBannerAdWithAppID:(NSString *)appID;
+
+
+/*! @function showBannerAdWithAppID:withDelegate:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @param delegate: You can receive notifications when the Ad is or is not loaded.
+ @discussion
+ 
+ The banner will be stucked to the bottom, with width 100% and height 50 points, no matter the orientation.
+ */
++ (void) showBannerAdWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
+
+
+/*! @function showBannerAdWithAppID:withFrame:withDelegate:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @param frame: A CGRect that will be used to draw the banner. The 0,0 point of the coordinate system will be always in the top-left corner. 
+ @param delegate: You can receive notifications when the Ad is or is not loaded.
+ @discussion
+ 
+ With this method you can customize the size of the banner, but the minimum accepted size is 320,50.
+ Using this method, the developer has the responsibility to adjust the banner frame on rotation.
+ */
++ (void) showBannerAdWithAppID:(NSString *)appID withFrame:(CGRect)frame withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
 
 @end

@@ -37,11 +37,11 @@
 #import "BT_downloader.h"
 #import "BT_application.h"
 #import "BT_audioPlayer.h"
+#import "RevMobAds.h"
 
 
 @interface revmobiossampleapp_appDelegate : NSObject <UIApplicationDelegate, BT_downloadFileDelegate, 
-							UITabBarControllerDelegate, AVAudioPlayerDelegate, UIAlertViewDelegate>{
-    
+							UITabBarControllerDelegate, AVAudioPlayerDelegate, UIAlertViewDelegate, RevMobAdsDelegate>{
 	
 	/*
 		See notes in revmobiossampleapp_appDelegate for information about....
