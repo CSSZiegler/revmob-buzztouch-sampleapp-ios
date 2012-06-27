@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A2709C215863D910026ED3B /* BCFAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2709C015863D1E0026ED3B /* BCFAds.a */; };
+		3A6CCC03159B761200BE61CA /* RevMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6CCC02159B761200BE61CA /* RevMobAds.a */; };
 		980A61D3146F161900D3746C /* equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 980A61CD146F161900D3746C /* equalizer.png */; };
 		980A61D4146F161900D3746C /* map_hybrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 980A61CE146F161900D3746C /* map_hybrid.png */; };
 		980A61D5146F161900D3746C /* map_standard.png in Resources */ = {isa = PBXBuildFile; fileRef = 980A61CF146F161900D3746C /* map_standard.png */; };
@@ -100,7 +100,7 @@
 		1D6058910D05DD3D006BFB54 /* revmobiossampleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revmobiossampleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2709BD15863D1E0026ED3B /* RevMobAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RevMobAds.h; sourceTree = "<group>"; };
 		3A2709BE15863D1E0026ED3B /* RevMobAdsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RevMobAdsDelegate.h; sourceTree = "<group>"; };
-		3A2709C015863D1E0026ED3B /* BCFAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = BCFAds.a; sourceTree = "<group>"; };
+		3A6CCC02159B761200BE61CA /* RevMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = RevMobAds.a; sourceTree = "<group>"; };
 		980A61CD146F161900D3746C /* equalizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equalizer.png; sourceTree = "<group>"; };
 		980A61CE146F161900D3746C /* map_hybrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_hybrid.png; sourceTree = "<group>"; };
 		980A61CF146F161900D3746C /* map_standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_standard.png; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A2709C215863D910026ED3B /* BCFAds.a in Frameworks */,
+				3A6CCC03159B761200BE61CA /* RevMobAds.a in Frameworks */,
 				9854D762144F3C1700D85938 /* libxml2.2.dylib in Frameworks */,
 				9861268312A23B9C005B0911 /* CoreAudio.framework in Frameworks */,
 				9861268512A23B9C005B0911 /* CoreLocation.framework in Frameworks */,
@@ -439,9 +439,9 @@
 		98D16AF8129001E10003AFCD /* BT_Config */ = {
 			isa = PBXGroup;
 			children = (
+				3A6CCC02159B761200BE61CA /* RevMobAds.a */,
 				3A2709BD15863D1E0026ED3B /* RevMobAds.h */,
 				3A2709BE15863D1E0026ED3B /* RevMobAdsDelegate.h */,
-				3A2709C015863D1E0026ED3B /* BCFAds.a */,
 				982D848712D190C0006ABB32 /* LICENSE.txt */,
 				98C5E7DF12EA08BC003DFC1B /* BT_config.txt */,
 				98D16AFC129001E10003AFCD /* BT_info.plist */,
