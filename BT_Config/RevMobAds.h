@@ -164,4 +164,14 @@
  */
 + (void) hideBannerAdWithAppID:(NSString *)appID;
 
+
+/*! @function releaseBannerAdWithAppID:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @discussion
+ 
+ Release a pre-loaded banner. Alpha version.
+ 
+ */
++ (void) releaseBannerAdWithAppID:(NSString *)appID;
+
 @end
