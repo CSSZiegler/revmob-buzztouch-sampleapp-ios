@@ -12,14 +12,19 @@
 			"startLocationUpdates":"0", 
 			"allowRotation":"allDevices", 
 
-			"BT_themes":[{"itemId":"3602C33B87CD3AB6D3368FF", "itemType":"BT_theme", "backgroundColor":"#FFFFFF"}
+			"BT_themes":[{"itemId":"3602C33B87CD3AB6D3368FF", "itemType":"BT_theme", "itemNickname":"Default Theme", "splashScreenItemId":"F6D9E8F4A6EF85A2F83B3C2", "splashScreenNickname":"splashscreen", "statusBarStyle":"default", "navBarStyle":"solid", "toolbarStyle":"solid", "backgroundColor":"#FFFFFF", "backgroundImageNameSmallDevice":"revmob-logo.png", "backgroundImageScale":"center"}
 			],
 
-			"BT_tabs":[
+			"BT_tabs":[{"itemId":"AFA45021A172B4F920CA639", "itemType":"BT_tab", "textLabel":"tab1",  "iconName":"blank.png", "soundEffectFileName":"", "homeScreenItemId":"8F0BB5FE1F2F75D529EC2ED"},
+					{"itemId":"3E14E123C0BFB7584F92D43", "itemType":"BT_tab", "textLabel":"tab2",  "iconName":"blank.png", "soundEffectFileName":"", "homeScreenItemId":"F6D9E8F4A6EF85A2F83B3C2"}
 			],
 
-			"BT_screens":[{"itemId":"6A73AAA3C1D312330DFB26B", "itemType":"BT_screen_menuListSimple", "itemNickname":"Home Screen Menu", "navBarTitleText":"Home",
-"childItems":[]}
+			"BT_screens":[{"itemId":"F6D9E8F4A6EF85A2F83B3C2", "itemType":"BT_screen_splash", "itemNickname":"splashscreen", "startTransitionAfterSeconds":"1", "transitionDurationSeconds":"1", "transitionType":"fade", "backgroundColor":"#000000", "backgroundImageNameSmallDevice":"revmob-logo.png", "backgroundImageScale":"center"},
+					{"itemId":"8F0BB5FE1F2F75D529EC2ED", "itemType":"BT_screen_menuButtons", "itemNickname":"menu", "navBarTitleText":"menu", "navBarStyle":"solid", "navBarRightButtonType":"home", "navBarRightButtonTapLoadScreenItemId":"goHome", "toolbarStyle":"solid", "buttonLayoutStyle":"grid", "buttonLabelLayoutStyle":"above", "preventAllScrolling":"0",
+"childItems":[{"itemId":"8F627F1B87AA8048F446B64", "itemType":"BT_buttonItem", "loadScreenWithItemId":"8F0BB5FE1F2F75D529EC2ED", "titleText":"fullscreen"},
+{"itemId":"E708B0B62033414CE48ADD2", "itemType":"BT_buttonItem", "loadScreenWithItemId":"8F0BB5FE1F2F75D529EC2ED","titleText":"banner"},
+{"itemId":"A6468F5E07C23ED591FAE2E", "itemType":"BT_buttonItem", "loadScreenWithItemId":"8F0BB5FE1F2F75D529EC2ED","titleText":"adlink"},
+{"itemId":"1B713709ECFAFF817E0718D", "itemType":"BT_buttonItem", "loadScreenWithItemId":"8F0BB5FE1F2F75D529EC2ED","titleText":"popup"}]}
 
 			]
 		}

@@ -5,6 +5,8 @@
 
 @interface RevMobAds : NSObject
 
+#pragma mark Fullscreen
+
 /*! @function showFullscreenAdWithAppID:
  @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
  @discussion
@@ -70,6 +72,92 @@
  */
 + (void) showFullscreenAdWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
 
+#pragma mark Fullscreen with pre-load
+
+/*
+  Load a Fullscreen Ad without showing it. To show the loaded Ad you have to call the showLoadedFullscreenAdWithAppID: method.
+  You may call this method in the beginning of the game or level to show the ad in the future.
+*/
++ (void) loadFullscreenAdWithAppID:(NSString *)appID;
+
+
+/*
+  Same as loadFullscreenAdWithAppID: but receive a delegate.
+*/
++ (void) loadFullscreenAdWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
+
+
+/*
+  This method will show the Ad you ask to load in the past, using the method loadFullscreenAdWithAppID:.		 
+  If you did not call the loadFullscreenAdWithAppID: method, nothing will happen.
+*/
++ (void) showLoadedFullscreenAdWithAppID:(NSString *)appID;
+
+
+/*
+  Return YES if the previously loaded Ad (by the method loadFullscreenAdWithAppID:) is loaded. Else return NO.
+		 
+  If you did not call the loadFullscreenAdWithAppID: method, nothing will happen and it will return NO.
+*/
++ (BOOL) isLoadedFullscreenAdWithAppID:(NSString *)appID;
+
+
+/*
+  Delete and release the Ad that was previously loaded by the method loadFullscreenAdWithAppID:.
+
+  If you did not call the loadFullscreenAdWithAppID: method, nothing will happen.
+*/
++ (void) releaseLoadedFullscreenAdWithAppID:(NSString *)appID;
+
+#pragma mark Banner
+
+/*! @function showBannerAdWithAppID:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @param delegate: You can receive notifications when the Ad is or is not loaded.
+ @discussion
+ 
+ Same as showBannerAdWithAppID:withDelegate: with delegate nil.
+ 
+ */
++ (void) showBannerAdWithAppID:(NSString *)appID;
+
+
+/*! @function showBannerAdWithAppID:withDelegate:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @param delegate: You can receive notifications when the Ad is or is not loaded.
+ @discussion
+ 
+ The banner will be stucked to the bottom, with width 100% and height 50 points, no matter the orientation.
+ */
++ (void) showBannerAdWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
+
+
+/*! @function showBannerAdWithAppID:withFrame:withDelegate:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @param frame: A CGRect that will be used to draw the banner. The 0,0 point of the coordinate system will be always in the top-left corner. 
+ @param delegate: You can receive notifications when the Ad is or is not loaded.
+ @discussion
+ 
+ With this method you can customize the size of the banner, but the minimum accepted size is 320,50.
+ Using this method, the developer has the responsibility to adjust the banner frame on rotation.
+ */
++ (void) showBannerAdWithAppID:(NSString *)appID withFrame:(CGRect)frame withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
+
+
+/*! @function hideBannerAdWithAppID:
+ @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
+ @discussion
+ 
+ Hide a banner.
+ 
+ */
++ (void) hideBannerAdWithAppID:(NSString *)appID;
+
+#pragma mark Ad Link
+
+//+ (void) openAdLinkWithAppID:(NSString *)appID;
+
+#pragma mark Popup
 
 /*! @function showPopupWithAppID:
  @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
@@ -120,58 +208,5 @@
  *** any other object or method will work
  */
 + (void) showPopupWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
-
-
-/*! @function showBannerAdWithAppID:
- @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
- @param delegate: You can receive notifications when the Ad is or is not loaded.
- @discussion
- 
- Same as showBannerAdWithAppID:withDelegate: with delegate nil.
-
- */
-+ (void) showBannerAdWithAppID:(NSString *)appID;
-
-
-/*! @function showBannerAdWithAppID:withDelegate:
- @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
- @param delegate: You can receive notifications when the Ad is or is not loaded.
- @discussion
- 
- The banner will be stucked to the bottom, with width 100% and height 50 points, no matter the orientation.
- */
-+ (void) showBannerAdWithAppID:(NSString *)appID withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
-
-
-/*! @function showBannerAdWithAppID:withFrame:withDelegate:
- @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
- @param frame: A CGRect that will be used to draw the banner. The 0,0 point of the coordinate system will be always in the top-left corner. 
- @param delegate: You can receive notifications when the Ad is or is not loaded.
- @discussion
- 
- With this method you can customize the size of the banner, but the minimum accepted size is 320,50.
- Using this method, the developer has the responsibility to adjust the banner frame on rotation.
- */
-+ (void) showBannerAdWithAppID:(NSString *)appID withFrame:(CGRect)frame withDelegate:(NSObject<RevMobAdsDelegate> *)delegate;
-
-
-/*! @function hideBannerAdWithAppID:
- @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
- @discussion
- 
- Hide a banner.
- 
- */
-+ (void) hideBannerAdWithAppID:(NSString *)appID;
-
-
-/*! @function releaseBannerAdWithAppID:
- @param appID: You can collect your App ID at http://revmob.com by looking up your apps.
- @discussion
- 
- Release a pre-loaded banner. Alpha version.
- 
- */
-+ (void) releaseBannerAdWithAppID:(NSString *)appID;
 
 @end

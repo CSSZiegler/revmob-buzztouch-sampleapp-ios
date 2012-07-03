@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A6CCC03159B761200BE61CA /* RevMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6CCC02159B761200BE61CA /* RevMobAds.a */; };
+		3A6CCEF415A39B0B00BE61CA /* RevMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6CCEF015A39B0B00BE61CA /* RevMobAds.a */; };
 		980A61D3146F161900D3746C /* equalizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 980A61CD146F161900D3746C /* equalizer.png */; };
 		980A61D4146F161900D3746C /* map_hybrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 980A61CE146F161900D3746C /* map_hybrid.png */; };
 		980A61D5146F161900D3746C /* map_standard.png in Resources */ = {isa = PBXBuildFile; fileRef = 980A61CF146F161900D3746C /* map_standard.png */; };
@@ -65,6 +65,7 @@
 		989985F1145C03ED00D9F882 /* Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 989985D7145C03ED00D9F882 /* Icon_114.png */; };
 		989985F2145C03ED00D9F882 /* Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 989985D8145C03ED00D9F882 /* Icon_57.png */; };
 		989985F3145C03ED00D9F882 /* Icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 989985D9145C03ED00D9F882 /* Icon_72.png */; };
+		989985F5145C063800D9F882 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 989985F4145C063800D9F882 /* README.txt */; };
 		98A2E05512BAC68200CD439B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A2E05412BAC68200CD439B /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		98A8809712D0989300049B09 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A8809612D0989300049B09 /* MediaPlayer.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		98B3CF2C145C0C3300E4DA4F /* BT_adView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3CEE1145C0C3200E4DA4F /* BT_adView.m */; };
@@ -98,9 +99,10 @@
 
 /* Begin PBXFileReference section */
 		1D6058910D05DD3D006BFB54 /* revmobiossampleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revmobiossampleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A2709BD15863D1E0026ED3B /* RevMobAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RevMobAds.h; sourceTree = "<group>"; };
-		3A2709BE15863D1E0026ED3B /* RevMobAdsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RevMobAdsDelegate.h; sourceTree = "<group>"; };
-		3A6CCC02159B761200BE61CA /* RevMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = RevMobAds.a; sourceTree = "<group>"; };
+		3A6CCEF015A39B0B00BE61CA /* RevMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = RevMobAds.a; sourceTree = "<group>"; };
+		3A6CCEF115A39B0B00BE61CA /* RevMobAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevMobAds.h; sourceTree = "<group>"; };
+		3A6CCEF215A39B0B00BE61CA /* RevMobAdsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevMobAdsDelegate.h; sourceTree = "<group>"; };
+		3A6CCEF315A39B0B00BE61CA /* RevMobAdvertiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevMobAdvertiser.h; sourceTree = "<group>"; };
 		980A61CD146F161900D3746C /* equalizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = equalizer.png; sourceTree = "<group>"; };
 		980A61CE146F161900D3746C /* map_hybrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_hybrid.png; sourceTree = "<group>"; };
 		980A61CF146F161900D3746C /* map_standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_standard.png; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		989985D7145C03ED00D9F882 /* Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_114.png; sourceTree = "<group>"; };
 		989985D8145C03ED00D9F882 /* Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_57.png; sourceTree = "<group>"; };
 		989985D9145C03ED00D9F882 /* Icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_72.png; sourceTree = "<group>"; };
+		989985F4145C063800D9F882 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = SOURCE_ROOT; };
 		98A2E05412BAC68200CD439B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		98A8809612D0989300049B09 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		98B3CEE0145C0C3200E4DA4F /* BT_adView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BT_adView.h; sourceTree = "<group>"; };
@@ -232,7 +235,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A6CCC03159B761200BE61CA /* RevMobAds.a in Frameworks */,
 				9854D762144F3C1700D85938 /* libxml2.2.dylib in Frameworks */,
 				9861268312A23B9C005B0911 /* CoreAudio.framework in Frameworks */,
 				9861268512A23B9C005B0911 /* CoreLocation.framework in Frameworks */,
@@ -247,6 +249,7 @@
 				9884784E12D1CD0600B7C04B /* CoreGraphics.framework in Frameworks */,
 				9884788712D1CEBD00B7C04B /* QuartzCore.framework in Frameworks */,
 				98E181621340576C00AA2F45 /* iAd.framework in Frameworks */,
+				3A6CCEF415A39B0B00BE61CA /* RevMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,10 +442,12 @@
 		98D16AF8129001E10003AFCD /* BT_Config */ = {
 			isa = PBXGroup;
 			children = (
-				3A6CCC02159B761200BE61CA /* RevMobAds.a */,
-				3A2709BD15863D1E0026ED3B /* RevMobAds.h */,
-				3A2709BE15863D1E0026ED3B /* RevMobAdsDelegate.h */,
+				3A6CCEF015A39B0B00BE61CA /* RevMobAds.a */,
+				3A6CCEF115A39B0B00BE61CA /* RevMobAds.h */,
+				3A6CCEF215A39B0B00BE61CA /* RevMobAdsDelegate.h */,
+				3A6CCEF315A39B0B00BE61CA /* RevMobAdvertiser.h */,
 				982D848712D190C0006ABB32 /* LICENSE.txt */,
+				989985F4145C063800D9F882 /* README.txt */,
 				98C5E7DF12EA08BC003DFC1B /* BT_config.txt */,
 				98D16AFC129001E10003AFCD /* BT_info.plist */,
 				98D16AF9129001E10003AFCD /* revmobiossampleapp_appDelegate.h */,
@@ -535,6 +540,7 @@
 				989985F1145C03ED00D9F882 /* Icon_114.png in Resources */,
 				989985F2145C03ED00D9F882 /* Icon_57.png in Resources */,
 				989985F3145C03ED00D9F882 /* Icon_72.png in Resources */,
+				989985F5145C063800D9F882 /* README.txt in Resources */,
 				980A61D3146F161900D3746C /* equalizer.png in Resources */,
 				980A61D4146F161900D3746C /* map_hybrid.png in Resources */,
 				980A61D5146F161900D3746C /* map_standard.png in Resources */,
